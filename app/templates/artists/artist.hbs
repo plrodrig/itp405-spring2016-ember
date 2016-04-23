@@ -1,9 +1,9 @@
-<h3>You selected {{model.artist.artistName}}</h3>
+<h3>You selected <span class="song">{{model.artist.artistName}}</span></h3>
 {{#each model.songs as |song|}}
   <div class="song">
-    <h4>
+    <p>
       {{song.title}}
-    </h4>
+    </p>
   </div>
 {{/each}}
 {{outlet}}
